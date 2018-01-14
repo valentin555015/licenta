@@ -1,0 +1,364 @@
+
+body{
+    font-family: verdana;
+}
+
+.main{
+    width: 100%;
+    height: auto;
+    font-family: verdana;
+    background-image: url(../imagini/fundal.jpg);
+    background-repeat: repeat;
+    min-height: 400px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 1000px;
+    height: auto;
+    min-height: 200px;
+    margin: 0 auto;
+}
+
+#subheader {
+    width: 100%;
+    height: 30px;
+    background: #3e1e54;
+    color: #fff;
+    margin-top: -15px;
+    padding-left: 20px;
+}
+
+#subheader p {
+    float: left;
+    margin-top: 7px;
+}
+
+/*Stiluri pentru logo*/
+
+#main-header {
+    width: 100%;
+    height: 100px;
+    background: #52286e;
+    float: left;
+    margin-top: -15px;
+}
+
+#logo {
+    width: 250px;
+    margin-left: 20px;
+    margin-top: 10px;
+    float: left;
+}
+
+/*Stiluri pentru cautare*/
+
+#search {
+    width: 550px;
+    float: left;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.search-area {
+    width: 550px;
+    height: 50px;
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    padding-left: 15px;
+}
+
+.search-btn {
+    width: 100px;
+    height: 50px;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    color: #fff;
+    background: #d10051;
+    margin-left: -100.5px;
+}
+
+/*stiluri pentru login/cos*/
+
+#user-menu {
+    width: 20px;
+    float: right;
+    margin-top: 20px;
+}
+
+#user-menu li {
+    float: left;
+    width: 70px;
+    text-align: center;
+    list-style: none;
+    font-size: 25px;
+}
+
+#user-menu li:hover {
+    font-size: 30px;
+    transition: all .5s ease;
+}
+
+#user-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Stiluri pt bara de navigare*/
+
+#navigation {
+    width: 100%;
+    height: 35px;
+    background: #3e1e54;
+    float: left;
+    box-shadow: 10px 14px 50px 2px #3e1e54;
+    padding-top: 10px;
+}
+
+nav {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+nav a {
+    margin-left: 35px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: grey;
+    transition: all .7s ease;
+}
+
+.menu-toggle {
+    color: white;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    font-size: 20px;
+    display: none;
+}
+
+/*poze glisante*/
+
+#slider {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    float: left;
+    overflow: hidden;
+}
+
+.bx-wrapper .bx-viewport {
+    margin-top: -20px;
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+    bottom: 30px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+}
+
+/*titlu categorii*/
+
+#heading-block {
+    width: 100%;
+    height: auto;
+    float: left;
+    color: #d10051;
+    font-size: 22px;
+}
+
+#heading-block h2 {
+    line-height: 35px;
+    border-left: 20px solid #d10051;
+    padding-left: 10px;
+}
+
+/*casute de categorie*/
+
+.catbox {
+    width: 182px;
+    height: 245px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    margin: 0 18 30 0;
+}
+
+.catbox span {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: block;
+    bottom: 30px;
+    position: absolute;
+    z-index: 999;
+    text-align: center;
+}
+
+.catbox:hover span {
+    color: #d10051;
+}
+
+.catbox img {
+    max-width: 100%;
+    transition: all .5s ease;
+}
+
+.catbox:hover img {
+    transform: scale(1.3, 1.3);
+    transition: all .5s ease;
+}
+
+/*stiluri pentru produse*/
+
+.prod-box {
+    width: 230px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 18 30 0;
+    position: relative;
+    float: left;
+}
+
+.prod-box > img {
+    max-width: 100%;
+}
+
+.prod-trans {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.prod-box:hover .prod-trans {
+    opacity: 1;
+    transition: all .5s ease;
+}
+
+.prod-feature {
+    text-align: center;
+    margin-top: -150px;
+    transition: all .5s ease;
+}
+
+.prod-feature p {
+    color: #d10051;
+    font-family: verdana;
+}
+
+.prod-box:hover .prod-feature {
+    margin-top: 150px;
+    transition: all .5s ease;
+}
+
+.prod-feature input {
+    width: 150px;
+    height: 35px;
+    font-size: 17px;
+    background: #d10051;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+}
+.prod-feature input:hover{
+    background: #d10051;
+    transition: all .5s ease;
+}
+
+/*stiluri pentru oferte*/
+
+.offer {
+    width: 320px;
+    float: left;
+    margin-right: 10px;
+}
+
+.offer:last-child {
+    margin-right: 0px;
+}
+
+.offer img {
+    width: 100%;
+}
+
+/*stiluri pentru subsol*/
+
+#footer {
+    width: 100%;
+    height: auto;
+    background: #f5f5f5;
+    float: left;
+}
+
+.footer_sub {
+    width: 25%;
+    float: left;
+}
+
+.footer_sub_2 {
+    width: 20%;
+    float: left;
+}
+
+.footer_sub_2 ul li {
+    list-style: none;
+}
+
+.footer_sub_2 ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer_sub_2 ul li a:hover {
+    color: #d10051;
+    text-decoration: underline;
+}
+
+.footer_sub_3 {
+    width: 35%;
+    float: left;
+}
+
+/*zona pentru abonare*/
+
+.subs {
+    width: 350px;
+    border: none;
+    height: 50px;
+    padding: 15px;
+    float: left;
+}
+
+.sub_btn {
+    height: 50px;
+    border: none;
+    background: #d10051;
+    float: left;
+}
+
+.sub_p {
+    color: #999;
+    font-style: italic;
+    font-size: 15px;
+}
+
+
